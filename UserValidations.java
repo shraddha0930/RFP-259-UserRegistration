@@ -43,7 +43,7 @@ public class UserValidations {
     }
     public void userpassword() {
         System.out.println("Enter password");
-        Pattern pattern = Pattern.compile("^[A-Za-z]{8,}$");
+        Pattern pattern = Pattern.compile("^[A-Za-z0-9]{8,}$");
         String password = scanner.next();
         Matcher matcher = pattern.matcher(password);
         if(matcher.matches()){
