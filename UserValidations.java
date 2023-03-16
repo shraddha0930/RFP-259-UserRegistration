@@ -25,9 +25,20 @@ public class UserValidations {
         String email = scanner.next();
         Matcher matcher = pattern.matcher(email);
         if(matcher.matches()){
-                System.out.println("Valid Name");
+                System.out.println("Valid EmailId");
         }else
-            System.out.println("Invalid Name");
+            System.out.println("Invalid EmailId");
+
+    }
+    public void mobilenumber() {
+        System.out.println("Enter Mobile Number");
+        Pattern pattern = Pattern.compile("^[1-9]{2}(\\s)[6-9]{1}[0-9]{9}");
+        String mobile = scanner.next();
+        Matcher matcher = pattern.matcher(mobile);
+        if(matcher.matches()){
+            System.out.println("Valid Mobile number");
+        }else
+            System.out.println("Invalid Mobile number");
 
     }
 
