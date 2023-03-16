@@ -41,5 +41,16 @@ public class UserValidations {
             System.out.println("Invalid Mobile number");
 
     }
+    public void userpassword() {
+        System.out.println("Enter password");
+        Pattern pattern = Pattern.compile("^[a-z]{8}$");
+        String password = scanner.next();
+        Matcher matcher = pattern.matcher(password);
+        if(matcher.matches()){
+            System.out.println("Valid password");
+        }else
+            System.out.println("Invalid password");
+
+    }
 
 }
