@@ -4,6 +4,7 @@ public class UserRegistrationMain {
         UserValidations userValidations = new UserValidations();
        // userValidations.username();
        // userValidations.useremail();
-        userValidations.mobilenumber();
+        // userValidations.mobilenumber();
+        userValidations.userpassword();
     }
 }
